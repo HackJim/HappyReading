@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/head_and_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/list_bg" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10_dip" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_10_dip" >
+
+                        <ImageView
+                            android:id="@+id/about_logo"
+                            android:layout_width="@dimen/dimen_50_dip"
+                            android:layout_height="@dimen/dimen_50_dip"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/head_img" />
+
+                        <TextView
+                            android:id="@+id/version_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10_dip"
+                            android:layout_marginTop="@dimen/dimen_5_dip"
+                            android:layout_toRightOf="@+id/about_logo"
+                            android:text="@string/version"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/dimen_14_dip" />
+
+                        <TextView
+                            android:id="@+id/version_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_5_dip"
+                            android:layout_toRightOf="@id/version_tv"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/dimen_14_dip" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/version_tv"
+                            android:layout_marginLeft="@dimen/dimen_10_dip"
+                            android:layout_marginTop="@dimen/dimen_5_dip"
+                            android:layout_toRightOf="@id/about_logo"
+                            android:text="@string/copyright"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/dimen_14_dip" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/divider" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:background="@drawable/edit_text_bg"
+                        android:text="@string/copyright_text"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/dimen_14_dip" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:layout_below="@id/head_and_text"
+                android:background="@drawable/more_item_top_selector"
+                android:clickable="true"
+                android:padding="@dimen/dimen_10_dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/icon_about"
+                    android:drawablePadding="@dimen/dimen_10_dip"
+                    android:text="更改阅读背景"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/dimen_16_dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_arrow" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/read_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1"
+                android:stretchColumns="0,1,2,3"
+                android:visibility="gone" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/bt_bg1"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style01"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_bg2"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style02"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_bg3"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style03"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_bg4"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style04"
+                        android:focusable="false" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/bt_bg5"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style05"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_bg6"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style06"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_bg7"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style07"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_bg8"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/style08"
+                        android:focusable="false" />
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:layout_below="@id/read_bg"
+                android:background="@drawable/more_item_middle_selector"
+                android:clickable="true"
+                android:padding="@dimen/dimen_10_dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/icon_feedback"
+                    android:drawablePadding="@dimen/dimen_10_dip"
+                    android:text="更改主题风格"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/dimen_16_dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_arrow" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/read_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:stretchColumns="0,1,2,3"
+                android:visibility="gone" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/bt_style1"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/skin_black"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_style2"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/skin_blue"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_style3"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/skin_purple"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/bt_style4"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/skin_red"
+                        android:focusable="false" />
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:layout_below="@id/read_style"
+                android:background="@drawable/more_item_bottom_selector"
+                android:clickable="true"
+                android:padding="@dimen/dimen_10_dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/icon_setting"
+                    android:drawablePadding="@dimen/dimen_10_dip"
+                    android:text="更新无广告版"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/dimen_16_dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_arrow" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

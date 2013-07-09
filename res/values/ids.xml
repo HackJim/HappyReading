@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="root" type="id">false</item>
+    <item name="search_bg" type="id">false</item>
+    <item name="search_book_name" type="id">false</item>
+    <item type="id" name="search_now">false</item>
+    <item type="id" name="search">false</item>
+    <item type="id" name="clear_text">false</item>
+    <item type="id" name="result_layout">false</item>
+    <item type="id" name="searchList">false</item>
+    <item type="id" name="no_result">false</item>
+
+</resources>

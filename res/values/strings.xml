@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">欢迎使用乐读!</string>
+    <string name="app_name">乐读</string>
+    <string name="shelf">书架</string>
+    <string name="search">搜书</string>
+    <string name="search_more">更多</string>
+    <string name="download">下载</string>
+    <string name="setup">设置</string>
+    <string name="find_book">请输入书名</string>
+    <string name="search_book">搜索</string>
+    <string name="no_search_book">对不起，无搜索结果</string>
+    <string name="loading">正在获取数据</string>
+    <string name="bookpop_size">字体</string>
+    <string name="bookpop_light">亮度</string>
+    <string name="bookpop_card">书签</string>
+    <string name="bookpop_send">跳转</string>
+    <string name="version">版本：1.0</string>
+    <string name="copyright">Copyright©hackJim</string>
+    <string name="copyright_text">此版本适用于Android2.2及2.2以上操作系统系列手机。阅读和下载书籍的过程中需要访问网络，由此产生的流量费用全部由用户自身承担。此软件的开发纯属个人爱好，如果触犯了您的合法权益，请主动联系我。希望您能一直支持这款产品，我将持续进行更新。</string>
+
+</resources>

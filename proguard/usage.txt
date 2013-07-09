@@ -1,0 +1,1195 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.happyReading.BuildConfig
+com.happyReading.Dialog2Activity:
+    public static final int BUTTON1
+    public static final int BUTTON2
+com.happyReading.DialogActivity:
+    public static final int SURE
+    public static final int CANCLE
+com.happyReading.DownloadActivity:
+    private static final int CHOOSE_LOADING
+    private static final int CHOOSE_LOADED
+com.happyReading.R
+com.happyReading.R$attr
+com.happyReading.R$color
+com.happyReading.R$dimen
+com.happyReading.R$drawable
+com.happyReading.R$id
+com.happyReading.R$layout
+com.happyReading.R$string
+com.happyReading.R$style
+com.happyReading.SearchActivity:
+    public static final int ONLINE_ONE
+    public static final int ONLINE_MORE
+    public static final int LOAD_ONE
+    public static final int LOAD_MORE
+com.happyReading.ShelfActivity:
+    private static final int ONLINE
+    private static final int NOT_ONLINE
+com.happyReading.SplashActivity:
+    private static final int COPY_DB_ERROR
+    private static final int COPY_DB_SUCCESS
+    private static final int COPY_DB_ALREADY_HAVE
+    public static final int PARSE_SUCCESS
+    public static final int PARSE_ERROR
+    public static final int SERVER_ERROR
+    public static final int URL_ERROR
+    public static final int URL_CANT_FIND
+    public static final int NETWORK_ERROR
+    private static final int DOWNLOAD_SUCCESS
+    private static final int DOWNLOAD_ERROR
+    private static final int UPDATA
+com.happyReading.bean.NovelInfo:
+    16:16:public java.lang.String getNovelLastChapterUrl()
+    24:24:public java.lang.String getNovelLastChapterName()
+    40:40:public java.lang.String getNovelMoreUrl()
+com.happyReading.bean.SimpleNovelInfo:
+    32:32:public java.lang.String getNovelComeFrom()
+com.happyReading.bean.UpdateInfo:
+    18:18:public java.lang.String getDescription()
+com.happyReading.dao.NovelDao:
+    private static final java.lang.String path
+    13:13:public NovelDao()
+    64:79:public static void insertNovel(com.happyReading.bean.DetailedNovelNoListInfo)
+    250:255:public static void setNovelNotInshelf(int)
+    327:332:public static void setNovelInshelf(int)
+    427:436:public static void setNovelOnlineAndInShelf(com.happyReading.bean.DetailedNovelNoListInfo)
+    610:610:public static java.util.List getNovelsInShelf()
+    648:656:private static int getNovelsCountByColumnName(java.lang.String)
+    666:666:public static int getNovelsInShelfCount()
+    676:676:public static int getNovelsLoadingCount()
+    686:686:public static int getNovelsLoadedCount()
+    696:696:public static int getNovelsWaitLoadCount()
+    707:718:public static int isNovelAlreadyHave(com.happyReading.bean.BaseNovelInfo)
+    954:964:public static int getNovelTxtLen(int)
+com.happyReading.dao.ShelfDao:
+    private static final java.lang.String path
+    11:11:public ShelfDao()
+    19:26:public static int getShelfNovelCount()
+com.happyReading.domain.Novel:
+    27:27:public int getReadedChapterIndex()
+    35:35:public int getReadBegin()
+    43:43:public int getReadEnd()
+    51:51:public int getTxtLen()
+    59:59:public int getLoadedChapterNum()
+    99:99:public java.lang.String getSummary()
+    123:123:public java.lang.String getLastChapterUrl()
+    147:147:public int getWaitLoad()
+com.happyReading.domain.Shelf:
+    35:41:public static int addNovel(int)
+    50:57:public static int deleteNovel(int)
+    66:73:public static int deleteNovelTotally(int)
+    82:91:public static int setNovelLastRead(int)
+    99:99:public static int novelCount()
+com.happyReading.download.NovelDownload:
+    public static final int TASK_NUM_MAX
+    144:144:public int getStartChapterNum()
+    152:152:public boolean isPause()
+com.happyReading.engine.UpdateInfoProvider:
+    17:17:public UpdateInfoProvider()
+com.happyReading.net.NetUtil:
+    16:16:public boolean isWifi()
+com.happyReading.readingView.BookPageFactory:
+    private static final java.lang.String TAG
+    36:37:public void setM_mbBufLen(int)
+    67:67:public int getM_fontSize()
+    71:71:public int getmLineCount()
+    400:400:public int getM_textColor()
+com.happyReading.readingView.ReadViewActivity:
+    private static final int PRE
+    private static final int NEXT
+    private static final java.lang.String TAG
+    protected int jumpPage
+    int readHeight
+com.happyReading.readingView.mark.MarkVo:
+    33:34:public void setText(java.lang.String)
+    41:42:public void setPage(int)
+    49:50:public void setCount(int)
+    57:58:public void setTime(java.lang.String)
+    65:66:public void setBookPath(java.lang.String)
+    73:74:public void setBegin(int)
+com.happyReading.test.DBOpenHelper
+com.happyReading.test.Test
+com.happyReading.test.Test$1
+com.happyReading.utils.ActivityUtils:
+    6:6:public ActivityUtils()
+    25:27:public static void startActivity(android.app.Activity,java.lang.Class)
+com.happyReading.utils.DensityUtil
+com.happyReading.utils.DownloadUtils:
+    16:16:public DownloadUtils()
+com.happyReading.utils.FileCopyUtils:
+    private static final int FILE_COPY_ERROR
+    private static final int FILE_COPY_SUCCESS
+    private static final int FILE_ALREADY_HAVE
+    14:14:public FileCopyUtils()
+    100:106:public static void assetsCopyAll(android.content.Context)
+    115:121:public static void assetsCopyByName(android.content.Context,java.lang.String)
+    131:170:private static void CopyAssets(android.content.Context,java.lang.String,java.lang.String)
+    128:128:static synthetic void access$0(android.content.Context,java.lang.String,java.lang.String)
+com.happyReading.utils.FileCopyUtils$2
+com.happyReading.utils.FileCopyUtils$3
+com.happyReading.utils.NovelInfoUtils:
+    34:34:public NovelInfoUtils()
+    523:570:public static com.happyReading.bean.DetailedNovelNoListInfo getDetailedNovelNolistInfo(java.lang.String,java.lang.String)
+    738:739:public static java.lang.String getChapterContentWebUrl(java.lang.String,java.lang.String)
+com.umeng.analytics.Gender
+com.umeng.analytics.MobclickAgent:
+    20:397:public MobclickAgent()
+    34:35:public static void setAutoLocation(boolean)
+    41:42:public static void setSessionContinueMillis(long)
+    48:49:public static void setEnableEventBuffer(boolean)
+    55:56:public static void setOnlineConfigureListener(com.umeng.analytics.onlineconfig.UmengOnlineConfigureListener)
+    59:59:static com.umeng.analytics.b a()
+    67:74:public static void setOpenGLContext(javax.microedition.khronos.opengles.GL10)
+    81:82:public static void openActivityDurationTrack(boolean)
+    89:90:public static void setDebugMode(boolean)
+    101:102:public static void setDefaultReportPolicy(android.content.Context,int)
+    125:133:public static void onResume(android.content.Context,java.lang.String,java.lang.String)
+    143:143:public static void onError(android.content.Context)
+    146:152:public static void onError(android.content.Context,java.lang.String)
+    160:161:public static void reportError(android.content.Context,java.lang.String)
+    168:169:public static void reportError(android.content.Context,java.lang.Throwable)
+    177:178:public static void flush(android.content.Context)
+    187:188:public static void onEvent(android.content.Context,java.lang.String)
+    196:197:public static void onEvent(android.content.Context,java.lang.String,int)
+    206:212:public static void onEvent(android.content.Context,java.lang.String,java.lang.String,int)
+    221:227:public static void onEvent(android.content.Context,java.lang.String,java.lang.String)
+    237:238:public static void onEvent(android.content.Context,java.lang.String,java.util.HashMap)
+    248:253:public static void onEventDuration(android.content.Context,java.lang.String,long)
+    262:271:public static void onEventDuration(android.content.Context,java.lang.String,java.lang.String,long)
+    280:285:public static void onEventDuration(android.content.Context,java.lang.String,java.util.HashMap,long)
+    292:293:public static void onEventBegin(android.content.Context,java.lang.String)
+    301:302:public static void onEventEnd(android.content.Context,java.lang.String)
+    310:311:public static void onEventBegin(android.content.Context,java.lang.String,java.lang.String)
+    319:320:public static void onEventEnd(android.content.Context,java.lang.String,java.lang.String)
+    329:330:public static void onKVEventBegin(android.content.Context,java.lang.String,java.util.HashMap,java.lang.String)
+    338:339:public static void onKVEventEnd(android.content.Context,java.lang.String,java.lang.String)
+    350:351:public static java.lang.String getConfigParams(android.content.Context,java.lang.String)
+    362:368:public static void updateOnlineConfig(android.content.Context,java.lang.String,java.lang.String)
+    374:375:public static void updateOnlineConfig(android.content.Context)
+    386:401:public void setGender(android.content.Context,com.umeng.analytics.Gender)
+    409:416:public void setAge(android.content.Context,int)
+    425:437:public void setUserID(android.content.Context,java.lang.String,java.lang.String)
+    444:445:public static void onKillProcess(android.content.Context)
+com.umeng.analytics.MobclickAgent$1
+com.umeng.analytics.MobclickAgentJSInterface
+com.umeng.analytics.MobclickAgentJSInterface$a
+com.umeng.analytics.ReportPolicy
+com.umeng.analytics.a.a:
+    31:37:public a(java.lang.String,java.util.HashMap,long)
+    40:61:private java.util.HashMap a(java.util.HashMap)
+    65:65:private long b()
+com.umeng.analytics.a.b:
+    18:21:public b(java.lang.String,com.umeng.analytics.a.a)
+com.umeng.analytics.a.d:
+    25:27:public d(java.lang.String)
+com.umeng.analytics.a.e:
+    32:40:public e(java.lang.String,java.lang.String,java.lang.String,int,long)
+com.umeng.analytics.a.f:
+    83:86:public f(java.lang.String,java.lang.String)
+    90:106:private void c(org.json.JSONObject)
+    109:117:private void d(org.json.JSONObject)
+    120:123:private void e(org.json.JSONObject)
+    126:128:private void f(org.json.JSONObject)
+    131:134:private void g(org.json.JSONObject)
+    137:140:private void h(org.json.JSONObject)
+    144:152:public void a(org.json.JSONObject)
+com.umeng.analytics.a.g:
+    public abstract void a(org.json.JSONObject)
+com.umeng.analytics.a.h:
+    25:26:public void a(com.umeng.analytics.a.o)
+    68:76:public org.json.JSONObject b()
+com.umeng.analytics.a.i:
+    62:74:public void a(java.lang.String,com.umeng.analytics.a.a)
+com.umeng.analytics.a.l:
+    public static final java.lang.String f
+    18:19:public void a(java.lang.String)
+com.umeng.analytics.a.m:
+    private static final java.lang.String k
+    private static final java.lang.String l
+    private static final java.lang.String m
+com.umeng.analytics.a.o:
+    public static final java.lang.String d
+    public static final java.lang.String e
+    public static final java.lang.String f
+    private static final java.lang.String g
+com.umeng.analytics.a.p:
+    private static final java.lang.String c
+    private static final java.lang.String d
+com.umeng.analytics.b:
+    48:48:void a()
+    52:52:void b()
+    73:86:void a(android.content.Context,java.lang.String)
+    89:96:void a(android.content.Context,java.lang.Throwable)
+    158:162:void c(android.content.Context)
+    166:183:void a(android.content.Context,java.lang.String,java.lang.String,long,int)
+    187:210:void a(android.content.Context,java.lang.String,java.util.HashMap,long)
+    334:344:private void d(android.content.Context,java.lang.String)
+    347:365:private int e(android.content.Context,java.lang.String)
+    369:375:void b(android.content.Context,java.lang.String)
+    378:389:void c(android.content.Context,java.lang.String)
+    392:397:void a(android.content.Context,java.lang.String,java.lang.String)
+    400:410:void b(android.content.Context,java.lang.String,java.lang.String)
+    419:438:void a(android.content.Context,java.lang.String,java.util.HashMap,java.lang.String)
+    441:456:void c(android.content.Context,java.lang.String,java.lang.String)
+    460:464:void d(android.content.Context)
+com.umeng.analytics.c:
+    38:39:public void a(int)
+    49:56:public void a(java.lang.String)
+    59:62:public long b(java.lang.String)
+    66:67:public void a(java.lang.String,java.util.HashMap)
+    70:73:public java.util.HashMap c(java.lang.String)
+    78:79:public synchronized void a(java.lang.String,java.lang.String,java.lang.String,long,int)
+    82:83:public synchronized void a(java.lang.String,java.lang.String,java.util.HashMap,long)
+com.umeng.analytics.d:
+    82:83:public void e(android.content.Context)
+    442:444:public void a(int,long)
+com.umeng.analytics.f:
+    public static final java.lang.String a
+    public static final java.lang.String b
+    public static final java.lang.String c
+    static final int e
+    static final int f
+    static final java.lang.String n
+    static final java.lang.String o
+    public static final java.lang.String q
+    static final java.lang.String u
+    static final java.lang.String v
+    static final java.lang.String w
+    static final java.lang.String x
+    static final java.lang.String y
+    static final java.lang.String z
+    public static final java.lang.String A
+    public static final java.lang.String B
+    public static final java.lang.String C
+    public static final java.lang.String D
+    public static final java.lang.String E
+    public static final java.lang.String F
+    public static final java.lang.String G
+    public static final java.lang.String H
+    8:8:public f()
+com.umeng.analytics.i:
+    private static final java.lang.String a
+    private static final java.lang.String b
+    private static final java.lang.String c
+    private static final java.lang.String d
+    private static final java.lang.String e
+    private static final java.lang.String f
+    private static final java.lang.String g
+    private static final java.lang.String h
+    23:23:public i()
+    36:36:static android.content.SharedPreferences a(android.content.Context)
+    48:48:static android.content.SharedPreferences d(android.content.Context)
+    64:88:static org.json.JSONObject h(android.content.Context)
+com.umeng.analytics.j
+com.umeng.analytics.onlineconfig.UmengOnlineConfigureListener:
+    public abstract void onDataReceived(org.json.JSONObject)
+com.umeng.analytics.onlineconfig.a:
+    46:56:public void a(android.content.Context)
+    60:64:public void a(android.content.Context,java.lang.String,java.lang.String)
+    67:68:public void a(com.umeng.analytics.onlineconfig.UmengOnlineConfigureListener)
+    71:72:public void a()
+    79:80:public void b()
+    83:84:private void a(org.json.JSONObject)
+    87:96:private java.lang.String b(android.content.Context)
+    100:100:private java.lang.String c(android.content.Context)
+    105:125:private org.json.JSONObject d(android.content.Context)
+    130:131:private java.lang.String e(android.content.Context)
+    135:150:private void a(android.content.Context,com.umeng.analytics.onlineconfig.b)
+    153:178:private void b(android.content.Context,com.umeng.analytics.onlineconfig.b)
+    24:24:static synthetic void a(com.umeng.analytics.onlineconfig.a,org.json.JSONObject)
+    24:24:static synthetic org.json.JSONObject a(com.umeng.analytics.onlineconfig.a,android.content.Context)
+    24:24:static synthetic com.umeng.analytics.onlineconfig.c a(com.umeng.analytics.onlineconfig.a)
+    24:24:static synthetic void a(com.umeng.analytics.onlineconfig.a,android.content.Context,com.umeng.analytics.onlineconfig.b)
+    24:24:static synthetic void b(com.umeng.analytics.onlineconfig.a,android.content.Context,com.umeng.analytics.onlineconfig.b)
+com.umeng.analytics.onlineconfig.a$a
+com.umeng.analytics.onlineconfig.a$b
+com.umeng.analytics.onlineconfig.b
+com.umeng.analytics.onlineconfig.c:
+    public abstract void a(int,long)
+com.umeng.common.Log:
+    8:8:public Log()
+    56:59:public static void d(java.lang.String,java.lang.String)
+    62:65:public static void d(java.lang.String,java.lang.String,java.lang.Exception)
+com.umeng.common.a
+com.umeng.common.a.a:
+    8:8:public a()
+    37:37:public static int g(android.content.Context)
+com.umeng.common.a.b:
+    8:8:public b()
+com.umeng.common.a.c:
+    7:7:public c()
+    26:26:public static int f(android.content.Context)
+com.umeng.common.b:
+    protected static final java.lang.String b
+    private static final java.lang.String d
+    private static final java.lang.String e
+    public static final int c
+    62:70:public static boolean a(java.lang.String,android.content.Context)
+    81:82:public static boolean a(android.content.Context)
+    93:100:public static java.util.Set b(android.content.Context)
+    110:113:public static boolean c(android.content.Context)
+    173:182:public static java.lang.String f(android.content.Context)
+    192:200:public static java.lang.String[] a(javax.microedition.khronos.opengles.GL10)
+    292:301:public static java.lang.String i(android.content.Context)
+    313:326:public static java.lang.String j(android.content.Context)
+    668:671:public static java.lang.String c()
+    680:684:public static java.util.Date a(java.lang.String)
+    695:703:public static int a(java.util.Date,java.util.Date)
+    762:764:public static boolean x(android.content.Context)
+com.umeng.common.c:
+    97:97:public int a(java.lang.String)
+    141:141:public int e(java.lang.String)
+    163:163:public int g(java.lang.String)
+com.umeng.common.net.DownloadingService:
+    static final int a
+    static final int b
+    static final int c
+    static final int d
+    public static final int e
+    public static final int f
+    public static final int g
+    public static final int h
+    static final int i
+    static final int j
+    static final int k
+    static final java.lang.String l
+    private static final int q
+    private static final long u
+    466:476:private void d()
+com.umeng.common.net.a:
+    private android.content.Context c
+    private com.umeng.common.net.k d
+    private android.os.Messenger e
+    private java.lang.String f
+    private java.lang.String g
+    private java.lang.String h
+    private java.lang.String i
+    private java.lang.String j
+    private java.lang.String[] k
+    private boolean l
+    final android.os.Messenger a
+    private android.content.ServiceConnection m
+    47:48:public void a(java.lang.String)
+    51:52:public void b(java.lang.String)
+    59:60:public void a(java.lang.String[])
+    68:69:public void a(boolean)
+    176:183:public a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,com.umeng.common.net.k)
+    186:189:public void a()
+    26:26:static synthetic java.lang.String b()
+    26:26:static synthetic com.umeng.common.net.k a(com.umeng.common.net.a)
+    26:26:static synthetic android.content.ServiceConnection b(com.umeng.common.net.a)
+    26:26:static synthetic android.content.Context c(com.umeng.common.net.a)
+    26:26:static synthetic android.os.Messenger a(com.umeng.common.net.a,android.os.Messenger)
+    26:26:static synthetic java.lang.String d(com.umeng.common.net.a)
+    26:26:static synthetic java.lang.String e(com.umeng.common.net.a)
+    26:26:static synthetic java.lang.String f(com.umeng.common.net.a)
+    26:26:static synthetic java.lang.String g(com.umeng.common.net.a)
+    26:26:static synthetic java.lang.String h(com.umeng.common.net.a)
+    26:26:static synthetic java.lang.String[] i(com.umeng.common.net.a)
+    26:26:static synthetic boolean j(com.umeng.common.net.a)
+    26:26:static synthetic android.os.Messenger k(com.umeng.common.net.a)
+com.umeng.common.net.a$a:
+    215:223:public android.os.Bundle a()
+com.umeng.common.net.a$b
+com.umeng.common.net.b
+com.umeng.common.net.c:
+    private static final java.lang.String b
+    private static final java.lang.String c
+    private static final java.lang.String d
+    private static final java.lang.String e
+    private static final java.lang.String f
+    private static final java.lang.String g
+    private static final java.lang.String h
+    private static final java.lang.String j
+    126:135:public void a(java.lang.String,java.lang.String,java.lang.String)
+    138:149:public int b(java.lang.String,java.lang.String)
+    153:164:public java.lang.String c(java.lang.String,java.lang.String)
+    168:187:public java.util.Date d(java.lang.String,java.lang.String)
+    191:196:public void e(java.lang.String,java.lang.String)
+    199:212:public java.util.List a(java.lang.String)
+com.umeng.common.net.c$a:
+    private static final int b
+    private static final java.lang.String c
+com.umeng.common.net.c$b:
+    67:67:private c$b()
+com.umeng.common.net.f
+com.umeng.common.net.k
+com.umeng.common.net.l:
+    public static final java.lang.String a
+    public static final java.lang.String b
+    public static final java.lang.String c
+    public static final java.lang.String d
+    public static final java.lang.String e
+    15:15:public l()
+    55:59:public static int a(com.umeng.common.net.a$a)
+    63:69:public static android.app.PendingIntent a(android.content.Context,java.lang.String)
+com.umeng.common.net.m
+com.umeng.common.net.m$a
+com.umeng.common.net.m$b
+com.umeng.common.net.n
+com.umeng.common.net.o
+com.umeng.common.net.o$a
+com.umeng.common.net.p
+com.umeng.common.net.p$a
+com.umeng.common.net.p$b
+com.umeng.common.net.p$c
+com.umeng.common.net.q
+com.umeng.common.net.r
+com.umeng.common.net.s
+com.umeng.common.net.t
+com.umeng.common.util.DeltaUpdate:
+    private static final java.lang.String b
+    12:12:public DeltaUpdate()
+    21:21:public static boolean a()
+    41:46:public static java.lang.String b(android.content.Context)
+com.umeng.common.util.a
+com.umeng.common.util.b
+com.umeng.common.util.c
+com.umeng.common.util.d
+com.umeng.common.util.e
+com.umeng.common.util.f:
+    16:16:public f()
+    60:71:public static java.lang.String a(byte[],java.lang.String)
+com.umeng.common.util.g:
+    private static final java.lang.String b
+    25:25:public g()
+    123:135:public static java.lang.String a(android.content.Context,long)
+    139:158:public static java.lang.String c(java.lang.String)
+    167:170:public static void a(android.content.Context,java.lang.String)
+    181:187:public static boolean b(android.content.Context,java.lang.String)
+    211:214:public static boolean e(java.lang.String)
+com.umeng.common.util.h
+com.umeng.common.util.i
+net.htmlparser.jericho.Attribute:
+    static final java.lang.String CHECKED
+    static final java.lang.String CLASS
+    static final java.lang.String DISABLED
+    static final java.lang.String ID
+    static final java.lang.String MULTIPLE
+    static final java.lang.String NAME
+    static final java.lang.String SELECTED
+    static final java.lang.String STYLE
+    static final java.lang.String TYPE
+    static final java.lang.String VALUE
+    public java.lang.String getName()
+    public net.htmlparser.jericho.Segment getNameSegment()
+    public net.htmlparser.jericho.Segment getValueSegmentIncludingQuotes()
+    public char getQuoteChar()
+    net.htmlparser.jericho.Tag appendTidy(java.lang.Appendable,net.htmlparser.jericho.Tag)
+    private static void appendTidyValue(java.lang.Appendable,java.lang.CharSequence)
+    static java.lang.Appendable appendHTML(java.lang.Appendable,java.lang.CharSequence,java.lang.CharSequence)
+net.htmlparser.jericho.Attributes:
+    static net.htmlparser.jericho.Attributes construct(net.htmlparser.jericho.Source,int,int,int,net.htmlparser.jericho.StartTagType,java.lang.String,int)
+    static net.htmlparser.jericho.Attributes construct(net.htmlparser.jericho.Source,int,int,int)
+    java.lang.String getRawValue(java.lang.String)
+    public java.util.Map populateMap(java.util.Map,boolean)
+    public static int getDefaultMaxErrorCount()
+    public static void setDefaultMaxErrorCount(int)
+    public static java.lang.String generateHTML(java.util.Map)
+    static void appendHTML(java.lang.Appendable,java.util.Map)
+    java.lang.Appendable appendTidy(java.lang.Appendable,net.htmlparser.jericho.Tag)
+    java.util.Map getMap(boolean)
+net.htmlparser.jericho.AttributesOutputSegment
+net.htmlparser.jericho.BlankOutputSegment:
+    public BlankOutputSegment(int,int)
+    public BlankOutputSegment(net.htmlparser.jericho.Segment)
+    public void writeTo(java.io.Writer)
+    public java.lang.String getDebugInfo()
+net.htmlparser.jericho.Cache:
+    public java.util.Iterator getTagIterator()
+net.htmlparser.jericho.CharOutputSegment
+net.htmlparser.jericho.CharSequenceParseText:
+    public final int lastIndexOf(char,int)
+    public final int lastIndexOf(java.lang.String,int)
+net.htmlparser.jericho.CharStreamSource:
+    public abstract void writeTo(java.io.Writer)
+    public abstract java.lang.String toString()
+net.htmlparser.jericho.CharStreamSourceUtil:
+    private static final int DEFAULT_ESTIMATED_MAXIMUM_OUTPUT_LENGTH
+    private CharStreamSourceUtil()
+    public static java.io.Reader getReader(net.htmlparser.jericho.CharStreamSource)
+net.htmlparser.jericho.CharacterEntityReference:
+    public static final char _nbsp
+    public static final char _iexcl
+    public static final char _cent
+    public static final char _pound
+    public static final char _curren
+    public static final char _yen
+    public static final char _brvbar
+    public static final char _sect
+    public static final char _uml
+    public static final char _copy
+    public static final char _ordf
+    public static final char _laquo
+    public static final char _not
+    public static final char _shy
+    public static final char _reg
+    public static final char _macr
+    public static final char _deg
+    public static final char _plusmn
+    public static final char _sup2
+    public static final char _sup3
+    public static final char _acute
+    public static final char _micro
+    public static final char _para
+    public static final char _middot
+    public static final char _cedil
+    public static final char _sup1
+    public static final char _ordm
+    public static final char _raquo
+    public static final char _frac14
+    public static final char _frac12
+    public static final char _frac34
+    public static final char _iquest
+    public static final char _Agrave
+    public static final char _Aacute
+    public static final char _Acirc
+    public static final char _Atilde
+    public static final char _Auml
+    public static final char _Aring
+    public static final char _AElig
+    public static final char _Ccedil
+    public static final char _Egrave
+    public static final char _Eacute
+    public static final char _Ecirc
+    public static final char _Euml
+    public static final char _Igrave
+    public static final char _Iacute
+    public static final char _Icirc
+    public static final char _Iuml
+    public static final char _ETH
+    public static final char _Ntilde
+    public static final char _Ograve
+    public static final char _Oacute
+    public static final char _Ocirc
+    public static final char _Otilde
+    public static final char _Ouml
+    public static final char _times
+    public static final char _Oslash
+    public static final char _Ugrave
+    public static final char _Uacute
+    public static final char _Ucirc
+    public static final char _Uuml
+    public static final char _Yacute
+    public static final char _THORN
+    public static final char _szlig
+    public static final char _agrave
+    public static final char _aacute
+    public static final char _acirc
+    public static final char _atilde
+    public static final char _auml
+    public static final char _aring
+    public static final char _aelig
+    public static final char _ccedil
+    public static final char _egrave
+    public static final char _eacute
+    public static final char _ecirc
+    public static final char _euml
+    public static final char _igrave
+    public static final char _iacute
+    public static final char _icirc
+    public static final char _iuml
+    public static final char _eth
+    public static final char _ntilde
+    public static final char _ograve
+    public static final char _oacute
+    public static final char _ocirc
+    public static final char _otilde
+    public static final char _ouml
+    public static final char _divide
+    public static final char _oslash
+    public static final char _ugrave
+    public static final char _uacute
+    public static final char _ucirc
+    public static final char _uuml
+    public static final char _yacute
+    public static final char _thorn
+    public static final char _yuml
+    public static final char _fnof
+    public static final char _Alpha
+    public static final char _Beta
+    public static final char _Gamma
+    public static final char _Delta
+    public static final char _Epsilon
+    public static final char _Zeta
+    public static final char _Eta
+    public static final char _Theta
+    public static final char _Iota
+    public static final char _Kappa
+    public static final char _Lambda
+    public static final char _Mu
+    public static final char _Nu
+    public static final char _Xi
+    public static final char _Omicron
+    public static final char _Pi
+    public static final char _Rho
+    public static final char _Sigma
+    public static final char _Tau
+    public static final char _Upsilon
+    public static final char _Phi
+    public static final char _Chi
+    public static final char _Psi
+    public static final char _Omega
+    public static final char _alpha
+    public static final char _beta
+    public static final char _gamma
+    public static final char _delta
+    public static final char _epsilon
+    public static final char _zeta
+    public static final char _eta
+    public static final char _theta
+    public static final char _iota
+    public static final char _kappa
+    public static final char _lambda
+    public static final char _mu
+    public static final char _nu
+    public static final char _xi
+    public static final char _omicron
+    public static final char _pi
+    public static final char _rho
+    public static final char _sigmaf
+    public static final char _sigma
+    public static final char _tau
+    public static final char _upsilon
+    public static final char _phi
+    public static final char _chi
+    public static final char _psi
+    public static final char _omega
+    public static final char _thetasym
+    public static final char _upsih
+    public static final char _piv
+    public static final char _bull
+    public static final char _hellip
+    public static final char _prime
+    public static final char _Prime
+    public static final char _oline
+    public static final char _frasl
+    public static final char _weierp
+    public static final char _image
+    public static final char _real
+    public static final char _trade
+    public static final char _alefsym
+    public static final char _larr
+    public static final char _uarr
+    public static final char _rarr
+    public static final char _darr
+    public static final char _harr
+    public static final char _crarr
+    public static final char _lArr
+    public static final char _uArr
+    public static final char _rArr
+    public static final char _dArr
+    public static final char _hArr
+    public static final char _forall
+    public static final char _part
+    public static final char _exist
+    public static final char _empty
+    public static final char _nabla
+    public static final char _isin
+    public static final char _notin
+    public static final char _ni
+    public static final char _prod
+    public static final char _sum
+    public static final char _minus
+    public static final char _lowast
+    public static final char _radic
+    public static final char _prop
+    public static final char _infin
+    public static final char _ang
+    public static final char _and
+    public static final char _or
+    public static final char _cap
+    public static final char _cup
+    public static final char _int
+    public static final char _there4
+    public static final char _sim
+    public static final char _cong
+    public static final char _asymp
+    public static final char _ne
+    public static final char _equiv
+    public static final char _le
+    public static final char _ge
+    public static final char _sub
+    public static final char _sup
+    public static final char _nsub
+    public static final char _sube
+    public static final char _supe
+    public static final char _oplus
+    public static final char _otimes
+    public static final char _perp
+    public static final char _sdot
+    public static final char _lceil
+    public static final char _rceil
+    public static final char _lfloor
+    public static final char _rfloor
+    public static final char _lang
+    public static final char _rang
+    public static final char _loz
+    public static final char _spades
+    public static final char _clubs
+    public static final char _hearts
+    public static final char _diams
+    public static final char _quot
+    public static final char _amp
+    public static final char _lt
+    public static final char _gt
+    public static final char _OElig
+    public static final char _oelig
+    public static final char _Scaron
+    public static final char _scaron
+    public static final char _Yuml
+    public static final char _circ
+    public static final char _tilde
+    public static final char _ensp
+    public static final char _emsp
+    public static final char _thinsp
+    public static final char _zwnj
+    public static final char _zwj
+    public static final char _lrm
+    public static final char _rlm
+    public static final char _ndash
+    public static final char _mdash
+    public static final char _lsquo
+    public static final char _rsquo
+    public static final char _sbquo
+    public static final char _ldquo
+    public static final char _rdquo
+    public static final char _bdquo
+    public static final char _dagger
+    public static final char _Dagger
+    public static final char _permil
+    public static final char _lsaquo
+    public static final char _rsaquo
+    public static final char _euro
+    public static final char _apos
+    public java.lang.String getName()
+    public static java.lang.String getName(char)
+    public java.lang.String getCharacterReferenceString()
+    public static java.lang.String getCharacterReferenceString(int)
+    public static java.util.Map getNameToCodePointMap()
+    private static java.lang.String getCharacterReferenceString(java.lang.String)
+net.htmlparser.jericho.CharacterReference:
+    public static final int INVALID_CODE_POINT
+    private static final int TAB_LENGTH
+    public int getCodePoint()
+    public final void appendCharTo(java.lang.Appendable)
+    public boolean isTerminated()
+    public static java.lang.String encode(java.lang.CharSequence)
+    public static java.lang.String encode(char)
+    public static java.lang.String encodeWithWhiteSpaceFormatting(java.lang.CharSequence)
+    public static java.lang.String decode(java.lang.CharSequence)
+    public static java.lang.String decodeCollapseWhiteSpace(java.lang.CharSequence)
+    public static java.lang.String reencode(java.lang.CharSequence)
+    public abstract java.lang.String getCharacterReferenceString()
+    public static java.lang.String getCharacterReferenceString(int)
+    public java.lang.String getDecimalCharacterReferenceString()
+    public static java.lang.String getDecimalCharacterReferenceString(int)
+    public java.lang.String getHexadecimalCharacterReferenceString()
+    public static java.lang.String getHexadecimalCharacterReferenceString(int)
+    public java.lang.String getUnicodeText()
+    public static java.lang.String getUnicodeText(int)
+    public static net.htmlparser.jericho.CharacterReference parse(java.lang.CharSequence)
+    public static int getCodePointFromCharacterReferenceString(java.lang.CharSequence)
+    public static final boolean requiresEncoding(char)
+    public static java.io.Writer getEncodingFilterWriter(java.io.Writer)
+    private static java.lang.Appendable appendEncode(java.lang.Appendable,char)
+    static java.lang.Appendable appendEncode(java.lang.Appendable,java.lang.CharSequence,boolean)
+    private static final boolean appendEncodeCheckForWhiteSpaceFormatting(java.lang.Appendable,char,boolean)
+    static net.htmlparser.jericho.CharacterReference getPrevious(net.htmlparser.jericho.Source,int)
+    static net.htmlparser.jericho.CharacterReference getNext(net.htmlparser.jericho.Source,int)
+    private static net.htmlparser.jericho.CharacterReference getPrevious(net.htmlparser.jericho.Source,int,net.htmlparser.jericho.Config$UnterminatedCharacterReferenceSettings)
+    private static net.htmlparser.jericho.CharacterReference getNext(net.htmlparser.jericho.Source,int,net.htmlparser.jericho.Config$UnterminatedCharacterReferenceSettings)
+    static synthetic java.lang.Appendable access$000(java.lang.Appendable,char)
+net.htmlparser.jericho.CharacterReference$EncodingFilterWriter
+net.htmlparser.jericho.Config:
+    static final boolean IncludeServerTagsInElementHierarchy
+    private Config()
+net.htmlparser.jericho.Config$CompatibilityMode:
+    public static final int CODE_POINTS_ALL
+    public static final int CODE_POINTS_NONE
+    public boolean isFormFieldNameCaseInsensitive()
+    public void setFormFieldNameCaseInsensitive(boolean)
+    public int getUnterminatedCharacterEntityReferenceMaxCodePoint(boolean)
+    public void setUnterminatedCharacterEntityReferenceMaxCodePoint(boolean,int)
+    public int getUnterminatedDecimalCharacterReferenceMaxCodePoint(boolean)
+    public void setUnterminatedDecimalCharacterReferenceMaxCodePoint(boolean,int)
+    public int getUnterminatedHexadecimalCharacterReferenceMaxCodePoint(boolean)
+    public void setUnterminatedHexadecimalCharacterReferenceMaxCodePoint(boolean,int)
+    public java.lang.String getDebugInfo()
+net.htmlparser.jericho.Element:
+    private static final boolean INCLUDE_INCORRECTLY_NESTED_CHILDREN_IN_HIERARCHY
+    public net.htmlparser.jericho.Element getParentElement()
+    public int getDepth()
+    public net.htmlparser.jericho.Segment getContent()
+    public boolean isEmptyElementTag()
+    public net.htmlparser.jericho.Attributes getAttributes()
+    public net.htmlparser.jericho.FormControl getFormControl()
+net.htmlparser.jericho.EncodingDetector:
+    private static final int PREVIEW_BYTE_COUNT
+    private static final java.lang.String UTF_8
+    private static final java.lang.String ISO_8859_1
+    public EncodingDetector(java.net.URLConnection)
+    public EncodingDetector(java.io.InputStream,java.lang.String)
+    public java.io.InputStream getInputStream()
+net.htmlparser.jericho.EndTag:
+    public java.lang.String tidy()
+    public static java.lang.String generateHTML(java.lang.String)
+    static net.htmlparser.jericho.EndTag getPrevious(net.htmlparser.jericho.Source,int,java.lang.String,net.htmlparser.jericho.EndTagType)
+    static net.htmlparser.jericho.EndTag getPrevious(net.htmlparser.jericho.Source,int)
+    static net.htmlparser.jericho.EndTag getNext(net.htmlparser.jericho.Source,int)
+net.htmlparser.jericho.EndTagType:
+    static final java.lang.String START_DELIMITER_PREFIX
+    public net.htmlparser.jericho.StartTagType getCorrespondingStartTagType()
+    public java.lang.String generateHTML(java.lang.String)
+net.htmlparser.jericho.EndTagTypeGenericImplementation:
+    public java.lang.String generateHTML(java.lang.String)
+net.htmlparser.jericho.EndTagTypeMasonComponentCalledWithContent
+net.htmlparser.jericho.EndTagTypeMasonNamedBlock
+net.htmlparser.jericho.EndTagTypeNormal:
+    public net.htmlparser.jericho.StartTagType getCorrespondingStartTagType()
+net.htmlparser.jericho.FormControl
+net.htmlparser.jericho.FormControl$1
+net.htmlparser.jericho.FormControl$ElementContainer
+net.htmlparser.jericho.FormControl$ImageSubmitFormControl
+net.htmlparser.jericho.FormControl$InputFormControl
+net.htmlparser.jericho.FormControl$PositionComparator
+net.htmlparser.jericho.FormControl$RadioCheckboxFormControl
+net.htmlparser.jericho.FormControl$SelectFormControl
+net.htmlparser.jericho.FormControl$SelectFormControl$OptionElementIterator
+net.htmlparser.jericho.FormControl$SubmitFormControl
+net.htmlparser.jericho.FormControl$TextAreaFormControl
+net.htmlparser.jericho.FormControlOutputStyle
+net.htmlparser.jericho.FormControlOutputStyle$ConfigDisplayValue
+net.htmlparser.jericho.FormControlType
+net.htmlparser.jericho.FormField
+net.htmlparser.jericho.FormFields
+net.htmlparser.jericho.FormFields$Column
+net.htmlparser.jericho.HTMLElementName
+net.htmlparser.jericho.HTMLElementNameSet:
+    net.htmlparser.jericho.HTMLElementNameSet minus(java.lang.String)
+net.htmlparser.jericho.HTMLElements:
+    private HTMLElements()
+    public static java.util.Set getBlockLevelElementNames()
+    public static java.util.Set getDeprecatedElementNames()
+    public static java.util.Set getEndTagOptionalElementNames()
+    public static java.util.Set getStartTagOptionalElementNames()
+    public static java.util.Set getTerminatingStartTagNames(java.lang.String)
+    public static java.util.Set getTerminatingEndTagNames(java.lang.String)
+    public static java.util.Set getNonterminatingElementNames(java.lang.String)
+    public static java.util.Set getNestingForbiddenElementNames()
+net.htmlparser.jericho.IntStringHashMap:
+    private static final int DEFAULT_INITIAL_CAPACITY
+    private static final float DEFAULT_LOAD_FACTOR
+    public IntStringHashMap(int)
+    public int size()
+    public boolean isEmpty()
+    private net.htmlparser.jericho.IntStringHashMap$Entry getEntry(int)
+    public boolean containsKey(int)
+    public java.lang.String remove(int)
+    public void clear()
+    public boolean containsValue(java.lang.String)
+net.htmlparser.jericho.Logger:
+    public abstract void error(java.lang.String)
+    public abstract void debug(java.lang.String)
+    public abstract boolean isErrorEnabled()
+    public abstract boolean isDebugEnabled()
+net.htmlparser.jericho.LoggerDisabled:
+    public void error(java.lang.String)
+    public void debug(java.lang.String)
+    public boolean isErrorEnabled()
+    public boolean isDebugEnabled()
+net.htmlparser.jericho.LoggerFactory:
+    LoggerFactory()
+    public static net.htmlparser.jericho.Logger getLogger(java.lang.Class)
+net.htmlparser.jericho.LoggerProviderJCL$JCLLogger:
+    public void error(java.lang.String)
+    public void debug(java.lang.String)
+    public boolean isErrorEnabled()
+    public boolean isDebugEnabled()
+net.htmlparser.jericho.LoggerProviderJava$JavaLogger:
+    public void error(java.lang.String)
+    public void debug(java.lang.String)
+    public boolean isErrorEnabled()
+    public boolean isDebugEnabled()
+net.htmlparser.jericho.LoggerProviderLog4J$Log4JLogger:
+    public void error(java.lang.String)
+    public void debug(java.lang.String)
+    public boolean isErrorEnabled()
+    public boolean isDebugEnabled()
+net.htmlparser.jericho.LoggerProviderSLF4J$SLF4JLogger:
+    public void error(java.lang.String)
+    public void debug(java.lang.String)
+    public boolean isErrorEnabled()
+    public boolean isDebugEnabled()
+net.htmlparser.jericho.MasonTagTypes
+net.htmlparser.jericho.MicrosoftTagTypes
+net.htmlparser.jericho.NumericCharacterReference:
+    public boolean isDecimal()
+    public boolean isHexadecimal()
+    public static java.lang.String encode(java.lang.CharSequence)
+    public static java.lang.String encodeDecimal(java.lang.CharSequence)
+    public static java.lang.String encodeHexadecimal(java.lang.CharSequence)
+    public java.lang.String getCharacterReferenceString()
+    public static java.lang.String getCharacterReferenceString(int)
+net.htmlparser.jericho.OutputDocument:
+    public OutputDocument(net.htmlparser.jericho.Source)
+    public OutputDocument(net.htmlparser.jericho.Segment)
+    OutputDocument(net.htmlparser.jericho.ParseText)
+    public java.lang.CharSequence getSourceText()
+    public void remove(net.htmlparser.jericho.Segment)
+    public void remove(java.util.Collection)
+    public void insert(int,java.lang.CharSequence)
+    public void replace(net.htmlparser.jericho.Segment,java.lang.CharSequence)
+    public void replace(int,int,java.lang.CharSequence)
+    public void replace(int,int,char)
+    public void replace(net.htmlparser.jericho.FormControl)
+    public void replace(net.htmlparser.jericho.FormFields)
+    public java.util.Map replace(net.htmlparser.jericho.Attributes,boolean)
+    public void replace(net.htmlparser.jericho.Attributes,java.util.Map)
+    public void replaceWithSpaces(int,int)
+    public void register(net.htmlparser.jericho.OutputSegment)
+    public void writeTo(java.io.Writer)
+    public void writeTo(java.io.Writer,int,int)
+    public java.lang.String getDebugInfo()
+    public java.util.List getRegisteredOutputSegments()
+net.htmlparser.jericho.OutputSegment:
+    public abstract void writeTo(java.io.Writer)
+    public abstract java.lang.String toString()
+    public abstract java.lang.String getDebugInfo()
+net.htmlparser.jericho.PHPTagTypes
+net.htmlparser.jericho.ParseText:
+    public static final int NO_BREAK
+    public abstract int lastIndexOf(char,int)
+    public abstract int lastIndexOf(java.lang.String,int)
+    public abstract int length()
+    public abstract java.lang.CharSequence subSequence(int,int)
+    public abstract java.lang.String toString()
+net.htmlparser.jericho.RemoveOutputSegment
+net.htmlparser.jericho.Renderer
+net.htmlparser.jericho.Renderer$Processor
+net.htmlparser.jericho.Renderer$Processor$A_ElementHandler
+net.htmlparser.jericho.Renderer$Processor$BR_ElementHandler
+net.htmlparser.jericho.Renderer$Processor$ElementHandler
+net.htmlparser.jericho.Renderer$Processor$FontStyleElementHandler
+net.htmlparser.jericho.Renderer$Processor$HR_ElementHandler
+net.htmlparser.jericho.Renderer$Processor$LI_ElementHandler
+net.htmlparser.jericho.Renderer$Processor$ListElementHandler
+net.htmlparser.jericho.Renderer$Processor$PRE_ElementHandler
+net.htmlparser.jericho.Renderer$Processor$RemoveElementHandler
+net.htmlparser.jericho.Renderer$Processor$StandardBlockElementHandler
+net.htmlparser.jericho.Renderer$Processor$StandardInlineElementHandler
+net.htmlparser.jericho.Renderer$Processor$TD_ElementHandler
+net.htmlparser.jericho.Renderer$Processor$TR_ElementHandler
+net.htmlparser.jericho.RowColumnVector:
+    public int getRow()
+    public int getColumn()
+    public int getPos()
+net.htmlparser.jericho.Segment:
+    public final net.htmlparser.jericho.Source getSource()
+    public final boolean encloses(net.htmlparser.jericho.Segment)
+    public final boolean encloses(int)
+    public net.htmlparser.jericho.Renderer getRenderer()
+    public java.util.List getAllStartTags(net.htmlparser.jericho.StartTagType)
+    public java.util.List getAllStartTags(java.lang.String,java.lang.String,boolean)
+    public java.util.List getAllStartTags(java.lang.String,java.util.regex.Pattern)
+    public java.util.List getAllStartTagsByClass(java.lang.String)
+    public java.util.List getAllElements()
+    public java.util.List getAllElements(net.htmlparser.jericho.StartTagType)
+    public java.util.List getAllElements(java.lang.String,java.lang.String,boolean)
+    public java.util.List getAllElements(java.lang.String,java.util.regex.Pattern)
+    public java.util.List getAllElementsByClass(java.lang.String)
+    public java.util.List getAllCharacterReferences()
+    public final net.htmlparser.jericho.StartTag getFirstStartTag()
+    public final net.htmlparser.jericho.StartTag getFirstStartTag(net.htmlparser.jericho.StartTagType)
+    public final net.htmlparser.jericho.StartTag getFirstStartTag(java.lang.String)
+    public final net.htmlparser.jericho.StartTag getFirstStartTag(java.lang.String,java.util.regex.Pattern)
+    public final net.htmlparser.jericho.StartTag getFirstStartTagByClass(java.lang.String)
+    public final net.htmlparser.jericho.Element getFirstElement()
+    public final net.htmlparser.jericho.Element getFirstElement(java.lang.String)
+    public final net.htmlparser.jericho.Element getFirstElement(java.lang.String,java.lang.String,boolean)
+    public final net.htmlparser.jericho.Element getFirstElement(java.lang.String,java.util.regex.Pattern)
+    public final net.htmlparser.jericho.Element getFirstElementByClass(java.lang.String)
+    public java.util.List getFormControls()
+    public net.htmlparser.jericho.FormFields getFormFields()
+    public net.htmlparser.jericho.Attributes parseAttributes()
+    public void ignoreWhenParsing()
+    public final boolean isWhiteSpace()
+    static final java.util.regex.Pattern getClassPattern(java.lang.String)
+    private net.htmlparser.jericho.CharacterReference getNextCharacterReference(int)
+net.htmlparser.jericho.Source:
+    private static final java.lang.String UNINITIALISED
+    private static final java.lang.String CR
+    private static final java.lang.String LF
+    private static final java.lang.String CRLF
+    Source(java.lang.CharSequence,boolean)
+    public Source(java.io.Reader)
+    public Source(java.net.URL)
+    public Source(java.net.URLConnection)
+    public java.lang.String getEncoding()
+    public java.lang.String getPreliminaryEncodingInfo()
+    public java.lang.String getNewLine()
+    java.lang.String getBestGuessNewLine()
+    public int getRow(int)
+    public int getColumn(int)
+    public net.htmlparser.jericho.SourceFormatter getSourceFormatter()
+    public java.util.List getAllElements()
+    public net.htmlparser.jericho.Element getElementById(java.lang.String)
+    public net.htmlparser.jericho.Tag getPreviousTag(int)
+    net.htmlparser.jericho.Tag getNextNonServerTag(int)
+    net.htmlparser.jericho.Tag getPreviousNonServerTag(int)
+    public net.htmlparser.jericho.Element getNextElement(int)
+    public net.htmlparser.jericho.Element getNextElement(int,java.lang.String)
+    public net.htmlparser.jericho.Element getNextElement(int,java.lang.String,java.lang.String,boolean)
+    public net.htmlparser.jericho.Element getNextElement(int,java.lang.String,java.util.regex.Pattern)
+    public net.htmlparser.jericho.Element getNextElementByClass(int,java.lang.String)
+    public net.htmlparser.jericho.StartTag getPreviousStartTag(int,net.htmlparser.jericho.StartTagType)
+    public net.htmlparser.jericho.StartTag getPreviousStartTag(int,java.lang.String)
+    public net.htmlparser.jericho.StartTag getPreviousStartTag(int,java.lang.String,net.htmlparser.jericho.StartTagType)
+    public net.htmlparser.jericho.StartTag getNextStartTag(int,net.htmlparser.jericho.StartTagType)
+    public net.htmlparser.jericho.StartTag getNextStartTag(int,java.lang.String,java.util.regex.Pattern)
+    public net.htmlparser.jericho.StartTag getNextStartTagByClass(int,java.lang.String)
+    public net.htmlparser.jericho.EndTag getPreviousEndTag(int)
+    public net.htmlparser.jericho.EndTag getPreviousEndTag(int,net.htmlparser.jericho.EndTagType)
+    public net.htmlparser.jericho.EndTag getPreviousEndTag(int,java.lang.String)
+    public net.htmlparser.jericho.EndTag getNextEndTag(int)
+    public net.htmlparser.jericho.EndTag getNextEndTag(int,net.htmlparser.jericho.EndTagType)
+    public net.htmlparser.jericho.EndTag getNextEndTag(int,java.lang.String)
+    public net.htmlparser.jericho.Element getEnclosingElement(int)
+    public net.htmlparser.jericho.Element getEnclosingElement(int,java.lang.String)
+    public net.htmlparser.jericho.CharacterReference getPreviousCharacterReference(int)
+    public net.htmlparser.jericho.CharacterReference getNextCharacterReference(int)
+    public net.htmlparser.jericho.Attributes parseAttributes(int,int)
+    public net.htmlparser.jericho.Attributes parseAttributes(int,int,int)
+    public void ignoreWhenParsing(int,int)
+    public void ignoreWhenParsing(java.util.Collection)
+    public void clearCache()
+    public java.lang.String getCacheDebugInfo()
+    java.util.List getParsedTags()
+net.htmlparser.jericho.SourceCompactor
+net.htmlparser.jericho.SourceFormatter
+net.htmlparser.jericho.SourceFormatter$Processor
+net.htmlparser.jericho.StartTag:
+    public boolean isEmptyElementTag()
+    public net.htmlparser.jericho.Attributes parseAttributes()
+    public net.htmlparser.jericho.Attributes parseAttributes(int)
+    public net.htmlparser.jericho.Segment getTagContent()
+    public net.htmlparser.jericho.FormControl getFormControl()
+    public boolean isEndTagForbidden()
+    public boolean isEndTagRequired()
+    public java.lang.String tidy()
+    public java.lang.String tidy(boolean)
+    public static java.lang.String generateHTML(java.lang.String,java.util.Map,boolean)
+    static net.htmlparser.jericho.StartTag getPrevious(net.htmlparser.jericho.Source,int,java.lang.String,net.htmlparser.jericho.StartTagType)
+    static net.htmlparser.jericho.StartTag getPrevious(net.htmlparser.jericho.Source,int,java.lang.String,net.htmlparser.jericho.StartTagType,boolean)
+    static net.htmlparser.jericho.StartTag getNext(net.htmlparser.jericho.Source,int,java.lang.String,java.util.regex.Pattern)
+net.htmlparser.jericho.StartTagType:
+    static final java.lang.String START_DELIMITER_PREFIX
+net.htmlparser.jericho.StartTagTypeMarkupDeclaration:
+    static final java.lang.String ELEMENT
+    static final java.lang.String ATTLIST
+    static final java.lang.String ENTITY
+    static final java.lang.String NOTATION
+net.htmlparser.jericho.StartTagTypeMasonComponentCall
+net.htmlparser.jericho.StartTagTypeMasonComponentCalledWithContent
+net.htmlparser.jericho.StartTagTypeMasonNamedBlock
+net.htmlparser.jericho.StartTagTypeMicrosoftDownlevelRevealedConditionalComment
+net.htmlparser.jericho.StartTagTypePHPScript
+net.htmlparser.jericho.StartTagTypePHPShort
+net.htmlparser.jericho.StartTagTypePHPStandard
+net.htmlparser.jericho.StreamEncodingDetector:
+    private static final java.lang.String UTF_16
+    private static final java.lang.String UTF_16BE
+    private static final java.lang.String UTF_16LE
+    private static final java.lang.String UTF_8
+    private static final java.lang.String ISO_8859_1
+    private static final java.lang.String EBCDIC
+    private static final java.lang.String SCSU
+    private static final java.lang.String UTF_7
+    private static final java.lang.String UTF_EBCDIC
+    private static final java.lang.String BOCU_1
+    private static final java.lang.String UTF_32
+    private static final java.lang.String UTF_32BE
+    private static final java.lang.String UTF_32LE
+    public StreamEncodingDetector(java.net.URLConnection)
+    public java.io.Reader openReader()
+net.htmlparser.jericho.StreamedSource:
+    private static final boolean assumeNoNestedTags
+    private StreamedSource(java.io.Reader,boolean,java.lang.String,java.lang.String,java.lang.String)
+    private StreamedSource(net.htmlparser.jericho.EncodingDetector,boolean)
+    public StreamedSource(java.io.Reader)
+    public StreamedSource(java.io.InputStream)
+    public StreamedSource(java.net.URL)
+    public StreamedSource(java.net.URLConnection)
+    public net.htmlparser.jericho.StreamedSource setBuffer(char[])
+    public net.htmlparser.jericho.StreamedSource setCoalescing(boolean)
+    public java.lang.String getEncoding()
+    public java.lang.String getEncodingSpecificationInfo()
+    public java.lang.String getPreliminaryEncodingInfo()
+    public net.htmlparser.jericho.Segment getCurrentSegment()
+    public java.nio.CharBuffer getCurrentSegmentCharBuffer()
+    public boolean isXML()
+    public void setLogger(net.htmlparser.jericho.Logger)
+    public net.htmlparser.jericho.Logger getLogger()
+    public int getBufferSize()
+net.htmlparser.jericho.StreamedText:
+    public StreamedText(java.io.Reader,char[])
+    public StreamedText(java.io.Reader)
+    public StreamedText(java.nio.CharBuffer)
+    public net.htmlparser.jericho.StreamedText setBuffer(char[])
+    public boolean hasExpandableBuffer()
+    public int getMinRequiredBufferBegin()
+    public void writeTo(java.io.Writer,int,int)
+    public java.lang.String getDebugInfo()
+    public char[] getBuffer()
+    public int getBufferBegin()
+    java.lang.String getCurrentBufferContent()
+net.htmlparser.jericho.StringOutputSegment
+net.htmlparser.jericho.SubCache:
+    private static final int INITIAL_CAPACITY
+net.htmlparser.jericho.Tag:
+    private static final boolean INCLUDE_UNREGISTERED_IN_SEARCH
+    public java.lang.Object getUserData()
+    public void setUserData(java.lang.Object)
+    public abstract java.lang.String tidy()
+    net.htmlparser.jericho.Tag getPreviousTag(net.htmlparser.jericho.TagType)
+    boolean isOrphaned()
+net.htmlparser.jericho.TagType:
+    public final void register()
+    public final void deregister()
+    public static final java.util.List getRegisteredTagTypes()
+    public static final void setTagTypesIgnoringEnclosedMarkup(net.htmlparser.jericho.TagType[])
+net.htmlparser.jericho.TagType$TagTypesIgnoringEnclosedMarkup:
+    private TagType$TagTypesIgnoringEnclosedMarkup()
+net.htmlparser.jericho.TagTypeRegister:
+    private static final char NULL_CHAR
+    public static synchronized void remove(net.htmlparser.jericho.TagType)
+    public static java.util.List getList()
+    private void addTagTypesToList(java.util.List)
+    public static final java.lang.String getDebugInfo()
+    private void removeChild(net.htmlparser.jericho.TagTypeRegister)
+    private void removeTagType(net.htmlparser.jericho.TagType)
+net.htmlparser.jericho.TextExtractor:
+    public void writeTo(java.io.Writer)
+    public net.htmlparser.jericho.TextExtractor setConvertNonBreakingSpaces(boolean)
+    public net.htmlparser.jericho.TextExtractor setIncludeAttributes(boolean)
+    public net.htmlparser.jericho.TextExtractor setExcludeNonHTMLElements(boolean)
+net.htmlparser.jericho.Util:
+    private static final int BUFFER_SIZE
+    private Util()
+    public static void outputCSVLine(java.io.Writer,java.lang.String[])
+    private static void outputValueEscapeQuotes(java.io.Writer,java.lang.String)
+    static char[] getConcatenatedCharArray(java.lang.String,java.lang.String)
+net.htmlparser.jericho.WriterLogger:
+    public WriterLogger(java.io.Writer)
+    public java.io.Writer getWriter()
+    public java.lang.String getName()
+    public void error(java.lang.String)
+    public void debug(java.lang.String)
+    public boolean isErrorEnabled()
+    public void setErrorEnabled(boolean)
+    public void setWarnEnabled(boolean)
+    public void setInfoEnabled(boolean)
+    public boolean isDebugEnabled()
+    public void setDebugEnabled(boolean)

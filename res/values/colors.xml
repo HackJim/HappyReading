@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="top_and_bottom_bg">#d0e398</color>
+    <color name="color_zuiqianhui">#ffb4b4b4</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="transparent">@color/color_hei_8</color>
+    <color name="toptitle">#ffffff</color>
+    <color name="search_book_font">#535455</color>
+    <color name="search_book_bg">#d7d7cb</color>
+    <color name="shelf_book_text">@android:color/white</color>
+    <color name="navbar_text_color_nor">#ff246183</color>
+     <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="grey">#ffa1a1a1</color>
+    <color name="cancel_attention">#ff4e5762</color>
+    <color name="list_bg">#ffedf1f3</color>
+    <color name="list_divider">#ffd0d5e0</color>
+    <color name="separator_line">#ffcccccc</color>
+    <color name="transparent_white">#20ffffff</color>
+    <color name="text_color">#ff333333</color>
+    <color name="text_color_hint">#ffbbbbbb</color>
+</resources>

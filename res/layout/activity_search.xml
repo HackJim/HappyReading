@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@id/search_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/secondlayer_searchbox_bg" />
+
+        <EditText
+            android:id="@id/search_book_name"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_toLeftOf="@id/search_now"
+            android:background="@drawable/secondlayer_searchbox"
+            android:hint="@string/find_book"
+            android:maxLength="20"
+            android:paddingLeft="34.0dip"
+            android:singleLine="true"
+            android:textColorHint="@color/color_zuiqianhui"
+            android:textSize="@dimen/font_size_middle" />
+
+        <ImageView
+            android:id="@id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/search_book_name"
+            android:layout_marginTop="8.0dip"
+            android:clickable="true"
+            android:paddingLeft="20.0dip"
+            android:src="@drawable/searchbox_icon" />
+
+        <Button
+            android:id="@id/clear_text"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignRight="@id/search_book_name"
+            android:layout_alignTop="@id/search_book_name"
+            android:background="@drawable/searchbox_empty_icon"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@id/search_now"
+            android:layout_width="68.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_cancel_btn_selector_2_level_page"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/search_book"
+            android:textColor="@color/search_cancel_btn_text_color_selector"
+            android:textSize="14.0dip" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_bg"
+            android:background="@color/search_book_bg" >
+
+            <RelativeLayout
+                android:id="@id/result_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/search_book_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/search_book_one_img_and_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/search_book_item_bg" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dip"
+                            android:layout_marginTop="0dip" >
+
+                            <ImageView
+                                android:id="@+id/iv_book_bg"
+                                android:layout_width="65dip"
+                                android:layout_height="85dip"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/book_list_item_bg" />
+
+                            <TextView
+                                android:id="@+id/tv_book_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="3dip"
+                                android:layout_marginTop="23dip"
+                                android:text="  平凡的世界"
+                                android:textColor="@android:color/white"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_auther"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="3dip"
+                                android:layout_marginTop="60dip"
+                                android:text="  我吃西红柿"
+                                android:textColor="@android:color/white"
+                                android:textSize="9sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_book_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dip"
+                            android:layout_marginTop="1dip"
+                            android:text="书名:"
+                            android:textColor="@color/search_book_font"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_book_auther2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_book_name2"
+                            android:layout_marginLeft="80dip"
+                            android:paddingTop="1dip"
+                            android:text="作者:"
+                            android:textColor="@color/search_book_font"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_book_summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_book_auther2"
+                            android:layout_marginLeft="80dip"
+                            android:paddingTop="1dip"
+                            android:text="简介:"
+                            android:textColor="@color/search_book_font"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/search_book_one_button_online"
+                        style="@style/common_white_btn"
+                        android:layout_width="98.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/search_book_one_img_and_text"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginTop="1dip"
+                        android:text="在线阅读"
+                        android:textColor="#ff211300" />
+
+                    <Button
+                        android:id="@+id/search_book_one_button_download"
+                        style="@style/common_white_btn"
+                        android:layout_width="98.0dip"
+                        android:layout_below="@+id/search_book_one_img_and_text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:text="下载全本"
+                        android:textColor="#ff211300" />
+
+                    <Button
+                        android:id="@+id/search_book_one_button_more"
+                        style="@style/common_white_btn"
+                        android:layout_width="98.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/search_book_one_img_and_text"
+                        android:layout_marginRight="3dip"
+                        android:layout_marginTop="1dip"
+                        android:text="获取更多"
+                        android:textColor="#ff211300" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@id/searchList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@null"
+                    android:dividerHeight="0.0dip"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@id/no_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/no_result"
+                    android:text="@string/no_search_book"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/loading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/search_book_bg"
+                    android:gravity="center"
+                    android:padding="8dip" >
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="24dip"
+                        android:layout_height="24dip"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginTop="6dip"
+                        android:indeterminate="true" />
+
+                    <TextView
+                        android:id="@+id/txt_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dip"
+                        android:layout_toRightOf="@id/progress"
+                        android:text="@string/loading"
+                        android:textColor="@color/search_book_font" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

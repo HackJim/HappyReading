@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="updateurl">https://intel.c9.io/hackjim/demo-project/workspace/html/MyApp/updateinfo.xml</string>
+</resources>

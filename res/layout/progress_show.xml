@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+   <TextView 
+       android:id="@+id/top_title_name"
+       android:layout_width="fill_parent"
+       android:layout_height="43dip"
+       android:text="书架"
+       android:textSize="21sp"
+       android:background="@drawable/toolbar_bg"
+       android:gravity="center"
+       android:textColor="@color/toptitle"
+       />
+
+</LinearLayout>

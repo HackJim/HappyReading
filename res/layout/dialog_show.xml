@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="42.0dip"
+            android:background="@drawable/dialog_yellow_top"
+            android:gravity="center"
+            android:text="新概念英语I"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <FrameLayout
+            android:id="@+id/fl_dialog_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_mid"
+            android:gravity="center"
+            android:minHeight="100.0dip" >
+
+            <TextView
+                android:id="@+id/tv_dialog_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:text="加入书架？"
+                android:textColor="@color/search_book_font"
+                android:textSize="15.0sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="292.0dip"
+            android:layout_height="70.0dip"
+            android:background="@drawable/dialog_bottom" >
+
+            <Button
+                android:id="@+id/sureButton"
+                style="@style/common_green_btn"
+                android:layout_width="98.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24.0dip"
+                android:layout_marginRight="24.0dip"
+                android:text="确认"
+                android:background="@drawable/yellow_btn_bg2"
+                android:textColor="#ff211300" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="@style/common_white_btn"
+                android:layout_width="98.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="160.0dip"
+                android:layout_marginRight="24.0dip"
+                android:text="取消"
+                android:textColor="#ff211300" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

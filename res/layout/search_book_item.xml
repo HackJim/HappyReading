@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_book_one_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_book_item_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="0dip" >
+
+        <ImageView
+            android:id="@+id/iv_book_bg"
+            android:layout_width="72dip"
+            android:layout_height="92dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/book_list_item_bg" />
+
+        <TextView
+            android:id="@+id/tv_book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="23dip"
+            android:text="  平凡的世界"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_book_auther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="60dip"
+            android:text="  我吃西红柿"
+            android:textColor="@android:color/white"
+            android:textSize="9sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_book_order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dip"
+        android:layout_marginTop="1dip"
+        android:singleLine="true"
+        android:text="序号:"
+        android:textColor="@color/search_book_font"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_book_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_book_order_num"
+        android:layout_marginLeft="90dip"
+        android:layout_marginTop="1dip"
+        android:text="书名:"
+        android:singleLine="true"
+        android:textColor="@color/search_book_font"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_book_auther2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_book_name2"
+        android:layout_marginLeft="90dip"
+        android:paddingTop="1dip"
+        android:text="作者:"
+        android:singleLine="true"
+        android:textColor="@color/search_book_font"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_book_lastest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_book_auther2"
+        android:layout_marginLeft="90dip"
+        android:paddingTop="1dip"
+        android:text="最新:"
+        android:singleLine="true"
+        android:textColor="@color/search_book_font"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/search_book_more_item_button1"
+        android:layout_width="60.0dip"
+        android:layout_height="30dip"
+        android:layout_below="@id/tv_book_lastest"
+        android:layout_toRightOf="@id/rl_left"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/yellow_btn_bg"
+        android:text="在线阅读"
+        android:textColor="@color/search_book_font"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/search_book_more_item_button2"
+        android:layout_width="60.0dip"
+        android:layout_height="30dip"
+        android:layout_toRightOf="@id/search_book_more_item_button1"
+        android:layout_marginLeft="20dip"
+        android:layout_below="@+id/tv_book_lastest"
+        android:background="@drawable/yellow_btn_bg"
+        android:text="下载全本"
+        android:textColor="@color/search_book_font"
+        android:textSize="10sp" />
+
+</RelativeLayout>

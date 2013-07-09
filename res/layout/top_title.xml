@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top_title_name"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/toolbar_bg"
+        android:gravity="center"
+        android:text="书架"
+        android:textColor="@color/toptitle"
+        android:textSize="21sp" />
+
+</LinearLayout>

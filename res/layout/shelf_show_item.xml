@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_shelf_novel_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/inshelf_cover" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shelf_bg" />
+    
+    <ImageView
+        android:id="@+id/iv_shelf_novel_update"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="2dip"
+        android:layout_alignRight="@id/iv_shelf_novel_cover"
+        android:layout_marginRight="23dip" />
+	
+    <ImageView
+        android:id="@+id/iv_shelf_novel_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_shelf_novel_cover"
+        android:layout_marginTop="67dip"
+        android:layout_marginRight="-7dip"
+        android:background="@drawable/novel_online" />
+
+    <TextView
+        android:id="@+id/tv_shelf_novel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dip"
+        android:background="#00000000"
+        android:text="天龙八部"
+        android:textColor="@color/search_book_font"
+        android:textSize="12dip" />
+
+    <TextView
+        android:id="@+id/tv_shelf_novel_auther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shelf_novel_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="#00000000"
+        android:text="金庸"
+        android:textColor="@color/search_book_font"
+        android:textSize="10dip" />
+
+</RelativeLayout>

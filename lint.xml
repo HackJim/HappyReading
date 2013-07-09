@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="NestedWeights">
+        <ignore path="res\layout\activity_read_view_menu.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam" severity="ignore" />
+    <issue id="UselessParent" severity="ignore" />
+    <issue id="UsesMinSdkAttributes" severity="ignore" />
+</lint>
